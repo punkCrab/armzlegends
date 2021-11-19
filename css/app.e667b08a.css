@@ -1,0 +1,487 @@
+@-webkit-keyframes load-anim {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes open {
+    0% {
+        height: 0
+    }
+    to {
+        height: 4rem
+    }
+}
+
+@keyframes open {
+    0% {
+        height: 0
+    }
+    to {
+        height: 4rem
+    }
+}
+
+@keyframes load-anim {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .578);
+    z-index: 10;
+    display: grid;
+    align-items: center;
+    text-align: center
+}
+
+.gif-load {
+    margin-top: 1rem;
+    width: 8rem
+}
+
+.enlarge {
+    -webkit-animation: open .5s cubic-bezier(.39, .575, .565, 1) both;
+    animation: open .5s cubic-bezier(.39, .575, .565, 1) both
+}
+
+.load-anim1 {
+    -webkit-animation: load-anim 1.2s cubic-bezier(.39, .575, .565, 1) both;
+    animation: load-anim 1.2s cubic-bezier(.39, .575, .565, 1) both;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+.load-anim2 {
+    -webkit-animation: load-anim 1.2s cubic-bezier(.39, .575, .565, 1) both;
+    animation: load-anim 1.2s cubic-bezier(.39, .575, .565, 1) both;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s
+}
+
+.load-anim3 {
+    -webkit-animation: load-anim 1.2s cubic-bezier(.39, .575, .565, 1) both;
+    animation: load-anim 1.2s cubic-bezier(.39, .575, .565, 1) both;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s
+}
+
+.glow {
+    -webkit-animation: glow .3s cubic-bezier(.39, .575, .565, 1) both;
+    animation: glow .3s cubic-bezier(.39, .575, .565, 1) both
+}
+
+.confetti {
+    background-size: contain;
+    -webkit-animation: disappear 4s cubic-bezier(.25, .46, .45, .94) both;
+    animation: disappear 4s cubic-bezier(.25, .46, .45, .94) both;
+    pointer-events: none
+}
+
+.confetti,
+.new-item {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+.new-item {
+    background-color: rgba(24, 24, 24, .829);
+    z-index: 10;
+    display: grid;
+    align-items: center;
+    text-align: center
+}
+
+.slide-in-elliptic-top-fwd {
+    -webkit-animation: slide-in-elliptic-top-fwd .7s cubic-bezier(.25, .46, .45, .94) both;
+    animation: slide-in-elliptic-top-fwd .7s cubic-bezier(.25, .46, .45, .94) both;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s
+}
+
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(.39, .575, .565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(.39, .575, .565, 1) both;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s
+}
+
+@-webkit-keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 0 #ffae00)
+    }
+    to {
+        filter: drop-shadow(0 0 10px #ffae00)
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+    0% {
+        transform: translateY(-600px) rotateX(-30deg) scale(0);
+        transform-origin: 50% 100%;
+        opacity: 0
+    }
+    to {
+        transform: translateY(0) rotateX(0) scale(1);
+        transform-origin: 50% 1400px;
+        opacity: 1
+    }
+}
+
+@keyframes slide-in-elliptic-top-fwd {
+    0% {
+        transform: translateY(-600px) rotateX(-30deg) scale(0);
+        transform-origin: 50% 100%;
+        opacity: 0
+    }
+    to {
+        transform: translateY(0) rotateX(0) scale(1);
+        transform-origin: 50% 1400px;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 1%
+    }
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1%
+    }
+    to {
+        opacity: 0
+    }
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(../fonts/Rubik-Regular.4b3f0681.ttf)
+}
+
+@font-face {
+    font-family: SongMyung;
+    src: url(../fonts/SongMyung-Regular.cec9db91.ttf)
+}
+
+.center-items {
+    display: grid;
+    align-items: center
+}
+
+.price-contain:hover .token {
+    transform: translateZ(0) scale(1.1)
+}
+
+.token {
+    transition: .3s ease
+}
+
+.zoom-hover:hover {
+    transform: translateZ(0) scale(1.1)
+}
+
+.zoom-hover {
+    transition: .3s ease;
+    cursor: pointer
+}
+
+.icon-shadows {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .324))
+}
+
+.claimUnlock {
+    color: #ffbf00
+}
+
+.claimLock {
+    color: #a4a4a4 !important;
+    pointer-events: none
+}
+
+.theme-text-primary {
+    color: var(--text-color);
+    transition: 1s ease
+}
+
+.theme-primary {
+    background-color: var(--bg)
+}
+
+.theme-primary,
+.theme-secondary {
+    color: var(--text-color);
+    transition: background-color 1s ease
+}
+
+.theme-secondary {
+    background-color: var(--bg-secondary)
+}
+
+#app {
+    font-family: Rubik;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    font-size: .95em !important
+}
+
+.logo {
+    width: 6em
+}
+
+.title-nav:hover {
+    color: #58a9fa
+}
+
+.navbar-infos {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.wallet-infos {
+    position: absolute;
+    right: 0;
+    width: 300px
+}
+
+.wallet-section:hover {
+    background-color: hsla(0, 0%, 83.5%, .16)
+}
+
+.wallet-section {
+    position: relative;
+    cursor: pointer
+}
+
+.title-selected {
+    color: #58a9fa;
+    font-weight: 700;
+    pointer-events: none
+}
+
+.title {
+    color: #000;
+    font-weight: 700
+}
+
+.pointer {
+    cursor: pointer
+}
+
+.text-sm {
+    font-size: .85em !important
+}
+
+.wallet {
+    position: absolute;
+    right: 0;
+    background-color: #58a9fa !important;
+    z-index: 1;
+    margin-top: 4rem
+}
+
+.wallet:hover {
+    background-color: #80bfff !important
+}
+
+.dark-mode-btn {
+    position: absolute;
+    right: 3em;
+    top: 2em;
+    z-index: 1
+}
+
+.dark-mode-offline {
+    position: absolute;
+    right: 3.7em;
+    top: 1.5em;
+    z-index: 3
+}
+
+.dark-mode-mobile {
+    position: absolute;
+    right: 1.7em;
+    top: 1em;
+    z-index: 10
+}
+
+.balance {
+    position: absolute;
+    right: 0;
+    z-index: 1
+}
+
+.common {
+    background-color: #a5a4a4 !important
+}
+
+.rare {
+    background-color: #71b760 !important
+}
+
+.epic {
+    background-color: #ad67d8 !important
+}
+
+.legendary {
+    background-color: #e5a94f !important
+}
+
+.genesis {
+    background-color: #4eaad2 !important
+}
+
+.unique {
+    background-color: #333 !important
+}
+
+.card {
+    border-radius: 10px
+}
+
+.border-body {
+    border-radius: 0 0 10px 10px
+}
+
+.bold {
+    font-weight: 700
+}
+
+.bnb {
+    height: 1.3rem;
+    margin-bottom: 3px;
+    margin-right: 7px
+}
+
+.rarity-box {
+    background-color: rgba(41, 41, 41, .537);
+    padding: 4px 6px;
+    font-size: .8em;
+    border-radius: 4px;
+    margin: 8px;
+    position: absolute;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff
+}
+
+.bg-grey {
+    background-color: #f3f6f9
+}
+
+.rounded-lg {
+    border-radius: 10px !important
+}
+
+.rounded-xl {
+    border-radius: 20px !important
+}
+
+.arm-img {
+    width: 15rem;
+    position: absolute;
+    top: -150px
+}
+
+.armz-box {
+    margin-top: 150px !important;
+    width: 360px
+}
+
+.btn-primary:hover {
+    background-color: #01b9f1 !important
+}
+
+.btn-primary {
+    background-color: #00c2ff !important;
+    border: none !important
+}
+
+.text-responsive {
+    font-size: min(2.5vw, 1em)
+}
+
+.fire-icon {
+    height: 1.25em;
+    filter: saturate(60%) drop-shadow(2px 2px 2px rgba(0, 0, 0, .324))
+}
+
+.btn-arm {
+    width: 214px
+}
+
+.modal-sell {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .578);
+    z-index: 10
+}
+
+.pumpFont {
+    -webkit-animation: pumpFont 1s ease-in-out infinite alternate-reverse;
+    animation: pumpFont 1s ease-in-out infinite alternate-reverse;
+    font-weight: 700;
+    color: #34e034
+}
+
+@-webkit-keyframes pumpFont {
+    0% {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes pumpFont {
+    0% {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.1)
+    }
+}

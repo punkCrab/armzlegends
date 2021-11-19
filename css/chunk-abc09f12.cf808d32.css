@@ -1,0 +1,411 @@
+.randomArmz {
+    position: absolute;
+    width: 8rem;
+    top: -4.75rem
+}
+
+.mint-btn:hover {
+    -webkit-animation: zoom .5s cubic-bezier(.215, .61, .355, 1) both;
+    animation: zoom .5s cubic-bezier(.215, .61, .355, 1) both
+}
+
+.mint-btn {
+    -webkit-animation: unzoom .5s cubic-bezier(.215, .61, .355, 1) both;
+    animation: unzoom .5s cubic-bezier(.215, .61, .355, 1) both
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.1)
+    }
+}
+
+@-webkit-keyframes unzoom {
+    0% {
+        transform: scale(1.1)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.gif-load {
+    margin-top: 3rem;
+    width: 8rem
+}
+
+.buy-btn[data-v-43d796e8] {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #282d38
+}
+
+.loading[data-v-43d796e8] {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .578);
+    z-index: 10;
+    display: grid;
+    align-items: center;
+    text-align: center
+}
+
+.bg-primary[data-v-43d796e8] {
+    background-color: #47afff !important
+}
+
+.battle-scene[data-v-43d796e8] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100
+}
+
+.player[data-v-43d796e8] {
+    z-index: 2;
+    width: 60%;
+    position: absolute
+}
+
+.opponent[data-v-43d796e8] {
+    z-index: 1;
+    width: 60%;
+    right: 0;
+    position: absolute
+}
+
+.fight-text[data-v-43d796e8] {
+    z-index: 5;
+    position: absolute
+}
+
+.rotate-in-2-br-ccw[data-v-43d796e8] {
+    -webkit-animation: rotate-in-2-br-ccw-data-v-43d796e8 1s cubic-bezier(.25, .46, .45, .94) both;
+    animation: rotate-in-2-br-ccw-data-v-43d796e8 1s cubic-bezier(.25, .46, .45, .94) both;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+.rotate-in-2-bl-cw[data-v-43d796e8] {
+    -webkit-animation: rotate-in-2-bl-cw-data-v-43d796e8 1s cubic-bezier(.25, .46, .45, .94) both;
+    animation: rotate-in-2-bl-cw-data-v-43d796e8 1s cubic-bezier(.25, .46, .45, .94) both;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+.fight[data-v-43d796e8] {
+    -webkit-animation: fight-data-v-43d796e8 .3s linear infinite both;
+    animation: fight-data-v-43d796e8 .3s linear infinite both;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s
+}
+
+.tracking-in-expand[data-v-43d796e8] {
+    -webkit-animation: tracking-in-expand-data-v-43d796e8 .7s cubic-bezier(.215, .61, .355, 1) both;
+    animation: tracking-in-expand-data-v-43d796e8 .7s cubic-bezier(.215, .61, .355, 1) both;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+.background[data-v-43d796e8] {
+    width: 100%
+}
+
+.party-icon[data-v-43d796e8] {
+    width: 5rem;
+    margin-left: 1rem
+}
+
+.boss1[data-v-43d796e8] {
+    background-color: #5493d7
+}
+
+.boss2[data-v-43d796e8] {
+    background-color: #9a54d7
+}
+
+.boss3[data-v-43d796e8] {
+    background-color: #d75454
+}
+
+.jello-horizontal[data-v-43d796e8] {
+    -webkit-animation: jello-horizontal-data-v-43d796e8 .9s both;
+    animation: jello-horizontal-data-v-43d796e8 .9s both
+}
+
+.lowHp[data-v-43d796e8] {
+    -webkit-animation: lowHp-data-v-43d796e8 .353s infinite;
+    animation: lowHp-data-v-43d796e8 .353s infinite;
+    -webkit-animation-timing-function: steps(4);
+    animation-timing-function: steps(4)
+}
+
+.wetP1[data-v-43d796e8] {
+    left: -7%
+}
+
+.wetP1[data-v-43d796e8],
+.wetP2[data-v-43d796e8] {
+    position: absolute;
+    width: 40%;
+    top: 20px;
+    height: auto;
+    filter: drop-shadow(0 0 1px #04022d)
+}
+
+.wetP2[data-v-43d796e8] {
+    right: -7%;
+    transform: scaleX(-1)
+}
+
+@-webkit-keyframes lowHp-data-v-43d796e8 {
+    0% {
+        filter: sepia(1) saturate(100) blur(1px)
+    }
+    6% {
+        filter: sepia(1) saturate(100) blur(1px)
+    }
+    7% {
+        filter: none
+    }
+    to {
+        filter: none
+    }
+}
+
+@keyframes lowHp-data-v-43d796e8 {
+    0% {
+        filter: sepia(1) saturate(100) blur(1px)
+    }
+    6% {
+        filter: sepia(1) saturate(100) blur(1px)
+    }
+    7% {
+        filter: none
+    }
+    to {
+        filter: none
+    }
+}
+
+@-webkit-keyframes jello-horizontal-data-v-43d796e8 {
+    0% {
+        transform: scaleX(1)
+    }
+    30% {
+        transform: scale3d(1.25, .75, 1)
+    }
+    40% {
+        transform: scale3d(.75, 1.25, 1)
+    }
+    50% {
+        transform: scale3d(1.15, .85, 1)
+    }
+    65% {
+        transform: scale3d(.95, 1.05, 1)
+    }
+    75% {
+        transform: scale3d(1.05, .95, 1)
+    }
+    to {
+        transform: scaleX(1)
+    }
+}
+
+@keyframes jello-horizontal-data-v-43d796e8 {
+    0% {
+        transform: scaleX(1)
+    }
+    30% {
+        transform: scale3d(1.25, .75, 1)
+    }
+    40% {
+        transform: scale3d(.75, 1.25, 1)
+    }
+    50% {
+        transform: scale3d(1.15, .85, 1)
+    }
+    65% {
+        transform: scale3d(.95, 1.05, 1)
+    }
+    75% {
+        transform: scale3d(1.05, .95, 1)
+    }
+    to {
+        transform: scaleX(1)
+    }
+}
+
+@-webkit-keyframes rotate-in-2-bl-cw-data-v-43d796e8 {
+    0% {
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        opacity: 0
+    }
+    to {
+        transform: rotate(0);
+        transform-origin: 0 100%;
+        opacity: 1
+    }
+}
+
+@keyframes rotate-in-2-bl-cw-data-v-43d796e8 {
+    0% {
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        opacity: 0
+    }
+    to {
+        transform: rotate(0);
+        transform-origin: 0 100%;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes rotate-in-2-br-ccw-data-v-43d796e8 {
+    0% {
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+        opacity: 0
+    }
+    to {
+        transform: rotate(0);
+        transform-origin: 100% 100%;
+        opacity: 1
+    }
+}
+
+@keyframes rotate-in-2-br-ccw-data-v-43d796e8 {
+    0% {
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+        opacity: 0
+    }
+    to {
+        transform: rotate(0);
+        transform-origin: 100% 100%;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fight-data-v-43d796e8 {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-2px, 2px)
+    }
+    40% {
+        transform: translate(-2px, -2px)
+    }
+    60% {
+        transform: translate(2px, 2px)
+    }
+    80% {
+        transform: translate(2px, -2px)
+    }
+    to {
+        transform: translate(0)
+    }
+}
+
+@keyframes fight-data-v-43d796e8 {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-2px, 2px)
+    }
+    40% {
+        transform: translate(-2px, -2px)
+    }
+    60% {
+        transform: translate(2px, 2px)
+    }
+    80% {
+        transform: translate(2px, -2px)
+    }
+    to {
+        transform: translate(0)
+    }
+}
+
+@-webkit-keyframes rotate-data-v-43d796e8 {
+    0% {
+        transform: rotateX(0deg);
+        transform-origin: top
+    }
+    25% {
+        transform: rotateX(45deg);
+        transform-origin: top
+    }
+    50% {
+        transform: rotateX(0deg);
+        transform-origin: top
+    }
+    75% {
+        transform: rotateX(-45deg);
+        transform-origin: top
+    }
+    to {
+        transform: rotateX(0deg);
+        transform-origin: top
+    }
+}
+
+@keyframes rotate-data-v-43d796e8 {
+    0% {
+        transform: rotateX(0deg);
+        transform-origin: top
+    }
+    25% {
+        transform: rotateX(45deg);
+        transform-origin: top
+    }
+    50% {
+        transform: rotateX(0deg);
+        transform-origin: top
+    }
+    75% {
+        transform: rotateX(-45deg);
+        transform-origin: top
+    }
+    to {
+        transform: rotateX(0deg);
+        transform-origin: top
+    }
+}
+
+@-webkit-keyframes tracking-in-expand-data-v-43d796e8 {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+    40% {
+        opacity: .6
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes tracking-in-expand-data-v-43d796e8 {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+    40% {
+        opacity: .6
+    }
+    to {
+        opacity: 1
+    }
+}

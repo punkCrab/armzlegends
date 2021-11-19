@@ -1,0 +1,11 @@
+.max-btn {
+    position: absolute;
+    right: -2px;
+    top: 0;
+    transform: scale(.7);
+    font-size: 1.5em
+}
+
+.bg-green {
+    background-color: #13c682
+}

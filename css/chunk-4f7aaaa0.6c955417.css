@@ -1,0 +1,112 @@
+.text-common {
+    color: #a5a4a4 !important
+}
+
+.text-rare {
+    color: #71b760 !important
+}
+
+.-textepic {
+    color: #ad67d8 !important
+}
+
+.modal-burn {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .578);
+    z-index: 10
+}
+
+.shaker-icon {
+    height: 2em
+}
+
+.bg-boost {
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/plus.4f2c3d04.gif);
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(90deg) brightness(125%) contrast(100%) drop-shadow(0 0 1px rgb(47, 220, 20));
+    background-size: cover;
+    -webkit-animation: scrolling 5s linear infinite;
+    animation: scrolling 5s linear infinite
+}
+
+.bubble-color {
+    height: 1.6rem;
+    width: 1.6rem
+}
+
+.lockUpgrade {
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 0
+}
+
+@-webkit-keyframes scrolling {
+    0% {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -100px
+    }
+}
+
+@keyframes scrolling {
+    0% {
+        background-position: 0 0
+    }
+    to {
+        background-position: 0 -100px
+    }
+}
+
+.btn-arm {
+    width: 214px
+}
+
+.randomArmz {
+    position: absolute;
+    width: 8rem;
+    top: -4.75rem
+}
+
+.mint-btn:hover {
+    -webkit-animation: zoom .5s cubic-bezier(.215, .61, .355, 1) both;
+    animation: zoom .5s cubic-bezier(.215, .61, .355, 1) both
+}
+
+.mint-btn {
+    -webkit-animation: unzoom .5s cubic-bezier(.215, .61, .355, 1) both;
+    animation: unzoom .5s cubic-bezier(.215, .61, .355, 1) both
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.1)
+    }
+}
+
+@-webkit-keyframes unzoom {
+    0% {
+        transform: scale(1.1)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.gif-load {
+    margin-top: 3rem;
+    width: 8rem
+}
+
+.item-container {
+    height: 200vh
+}
